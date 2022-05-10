@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class = "col">
+    <div class="content">
+        <table>
+            <thead>
+                <tr>
+                    <td>Title:</td>
+                    <td>Year:</td>
+                    <td>Cast:</td>
+                    <td>Genres:</td>
+                </tr>
+            </thead>
+            {% for movie in result %}
+                <tr>
+                    <td>{{ movie["Title"] }}</td>
+                    <td>{{ movie["Year"] }}"</td>
+                    <td>{{ movie["Cast"] }}"</td>
+                    <td>{{ movie["Genres(s)"] }}"</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div> 
+{% endblock %}
