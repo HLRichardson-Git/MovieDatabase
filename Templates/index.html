@@ -1,1 +1,29 @@
+{% extends 'base.html' %}
 
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class = "col">
+    <div class="content">
+        <form class = "searchBar-form" method="POST" enctype="multipart/form-data">
+            <input class = "searchBar" type="text" placeholder="search" name="search">
+            <button class = "searchButton">Search</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <td>Title:</td>
+                </tr>
+            </thead>
+            {% for movie in list %}
+                <tr>
+                    <td><a href="{{ url_for('movie', key=movie.Title) }}">{{ movie["Title"] }}</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div> 
+{% endblock %}
