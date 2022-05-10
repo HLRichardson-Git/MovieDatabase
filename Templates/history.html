@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class = "container">
+    <div class = "row">
+        <div class = "col-6">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Click History:</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for movie in clickHistory %}
+                    <tr>
+                        <td>{{ movie["Title"] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class = "col-6">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Search History:</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for movie in searchHistory %}
+                    <tr>
+                        <td>{{ movie["Title"] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
