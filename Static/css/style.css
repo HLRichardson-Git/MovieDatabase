@@ -1,1 +1,118 @@
-#temp#
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: #edf0f1;
+}
+
+body {
+    background-color: #edf0f1;
+}
+
+/* Nav Bar */
+
+li, a {
+    font-family: "montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #24252A;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black; 
+    padding: 30px 10%;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    text-decoration: none;
+    color: #FFCD73;
+}
+
+/* Home */
+
+.content-left {
+    border: 1px solid black; 
+    margin: 20px 20px 0px 0px;
+    padding: 25px;
+}
+
+.content-right {
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 25px;
+}
+
+thead tr td {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+/* movie-info */
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Table */
+
+table {
+	border-collapse: collapse;
+    font-family: Tahoma, Geneva, sans-serif;
+    width: 100%;
+}
+
+table td {
+	padding: 15px;
+}
+
+table thead td {
+	background-color: #54585d;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 13px;
+	border: 1px solid #54585d;
+}
+
+table tbody td {
+	color: #636363;
+	border: 1px solid #dddfe1;
+}
+
+table tbody tr {
+	background-color: #f9fafb;
+}
+
+table tbody tr:nth-child(odd) {
+	background-color: #ffffff;
+}
+
